@@ -123,7 +123,7 @@ PrepareData <- function() {
     read_sf("../data/G02-12_6842-jgd_GML/")
   )
   #
-  xml.metadata <- read_xml("../data/G02-12_5440-jgd_GML/G02-12_5440-jgd-for-read.xml")
+  xml.metadata <- read_xml("../data/G02-12_5440-jgd_GML/G02-12_5440-jgd.xml")
   col.names.metadata <- xml_child(xml_child(xml.metadata, 4), 1) %>%
     xml_contents %>%
     as_list %>%
